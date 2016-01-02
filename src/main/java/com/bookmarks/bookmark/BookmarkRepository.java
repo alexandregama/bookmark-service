@@ -1,11 +1,11 @@
 package com.bookmarks.bookmark;
 
-import java.util.Optional;
+import java.util.Collection;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookmarkRepository extends JpaRepository<Bookmark, Long> {
 
-	Optional<Bookmark> findByAccountUsername(String username);
+	Collection<Bookmark> findByAccountUsername(String username);
 
 }
