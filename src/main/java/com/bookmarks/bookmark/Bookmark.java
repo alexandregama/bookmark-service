@@ -1,4 +1,4 @@
-package com.bookmark.model;
+package com.bookmarks.bookmark;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.bookmarks.account.Account;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -18,7 +19,6 @@ public class Bookmark {
 
 	@ManyToOne
 	@JoinColumn(name = "account_id")
-	@Column(name = "account")
 	@JsonIgnore
 	private Account account;
 

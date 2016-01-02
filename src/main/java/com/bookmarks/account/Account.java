@@ -1,4 +1,4 @@
-package com.bookmark.model;
+package com.bookmarks.account;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.bookmarks.bookmark.Bookmark;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
